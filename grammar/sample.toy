@@ -1,0 +1,17 @@
+print (100);
+a = 3;
+if (a > 4) then {
+	b = 3;
+	if (a < 6) then 
+		c = 4;
+	d = c;
+} else {
+	b = 4;
+	c = 5;
+	while (a < 10) {
+		c = c + 2;
+		b = c * i;
+	}
+	b = 5;
+}
+print(b);
