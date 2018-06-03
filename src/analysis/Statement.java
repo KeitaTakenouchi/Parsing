@@ -1,5 +1,7 @@
 package analysis;
 
+import java.util.Arrays;
+
 import org.antlr.v4.runtime.ParserRuleContext;
 
 public class Statement implements Node
@@ -37,7 +39,8 @@ public class Statement implements Node
 	@Override
 	public String toString()
 	{
-		return "[@_" + ctx.start.getLine() + "] " ;//+ ctx.getText();
+		int[] lines = AntlrUtils.getStatementLines(ctx);
+		return "@_" + ctx.start.getLine() + " " + Arrays.toString(lines);
 	}
 
 }

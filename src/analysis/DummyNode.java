@@ -18,7 +18,7 @@ public class DummyNode implements Node
 
 	@Override
 	public String toString() {
-		return "[DUMMY_" + getId() +"]";
+		return "DUMMY_" + getId();
 	}
 	
 }
